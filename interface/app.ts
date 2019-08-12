@@ -1,3 +1,15 @@
+// 定义的变量和接口必须完全一致(除可选类型)
+interface Person1 {
+  name: string;
+  age: number;
+  alias?: string; // <= 可选属性
+}
+
+let tom: Person1 = {
+  name: "Tom",
+  age: 25
+};
+
 interface person {
   fname: string;
   lname: string;
