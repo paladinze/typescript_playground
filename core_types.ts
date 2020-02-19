@@ -47,3 +47,9 @@ type Admin = {
   privileges: string[];
 }
 type ElevatedEmployee = Employee & Admin;
+
+// casting
+const userInput1 = document.getElementById('some-input-id-1') as HTMLInputElement;
+const userInput2 = <HTMLInputElement> document.getElementById('some-input-id-2');
+
+const inputValue1 = userInput1.value;
